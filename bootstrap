@@ -1,0 +1,6 @@
+#!/bin/bash
+apt-get update
+apt-get install apache2 -y
+/etc/init.d/apache2 restart
+rm -r /var/www
+ln -s /home/ubuntu/cs462/webroot /var/www
